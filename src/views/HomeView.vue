@@ -12,14 +12,14 @@ const projects = ref([
     id: 1,
     name: 'Image Segment Nothing',
     description: 'This project is a web-based Deep-Learning integration that provides advanced image segmentation capabilities. Users can upload images, process them using AI-powered segmentation, visualize segmented regions, and download the results.',
-    image: '/assets/SN.png',
+    image: 'SN.png',
     link: 'https://github.com/GumZLey/image-segment-nothing-project',
   },
   {
     id: 2,
     name: 'Contact List',
     description: 'Contact List is a web app designed to make managing contacts simple and convenient. Users can securely log in with Google, then add, edit, delete, and search through their contact list. The frontend is built with Vue 3, Vuex for state management, and Tailwind CSS for styling. Axios handles API calls. The backend runs on Node.js with Express.js. MongoDB stores user and contact data. Security is handled with md5 for password hashing and dotenv for managing environment variables. Development tools like ESLint, Prettier keep the code clean and consistent.',
-    image: '/assets/Contact-List-Login.png',
+    image: 'Contact-List-Login.png',
     link: 'https://github.com/GumZLey/Contact-List',
   },
 ])
@@ -118,7 +118,7 @@ onMounted(() => {
       </div>
     </section>
     <section
-      class="flex flex-row justify-around items-center w-full min-h-[500px] p-10 mb-40"
+      class="flex lg:flex-row justify-around items-center w-full min-h-[500px] p-10 mb-40 md:flex-col-reverse sm:flex-col-reverse"
       id="aboutSection"
     >
       <div class="flex flex-col justify-start items-start text-left gap-2">
@@ -148,7 +148,7 @@ onMounted(() => {
         />
       </div>
     </section>
-    <section class="flex flex-col justify-start items-start w-full min-h-[500px] p-10 bg-pink-bg mb-40">
+    <section class="flex flex-col justify-start lg:items-start w-full min-h-[500px] p-10 bg-pink-bg mb-40 sm:items-center">
       <h1 class="text-4xl font-bold mb-10 ml-23">Skills</h1>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-20">
         <div

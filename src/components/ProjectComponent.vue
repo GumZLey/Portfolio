@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-row justify-around items-center w-full min-h-[500px] p-10" :class="ProjectData.id % 2 === 0 ? 'flex-row-reverse' : 'flex-row'">
+  <section class="flex lg:flex-row justify-around items-center w-full min-h-[500px] p-10 md:flex-col-reverse sm:flex-col-reverse" :class="ProjectData.id % 2 === 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'">
     <div class="flex flex-col justify-start items-start text-left gap-2">
       <h1 class="text-4xl font-bold mt-2 leading-15 ml-1">
         {{ ProjectData.name }}
@@ -29,7 +29,7 @@ const props = defineProps({
   ProjectData: Object,
 })
 
-const imagePath = new URL(`${props.ProjectData.image}`, import.meta.url).href
+const imagePath = new URL(`../assets/${props.ProjectData.image}`, import.meta.url).href
 
 const toGithub = () => {
   window.open(props.ProjectData.link, '_blank')
