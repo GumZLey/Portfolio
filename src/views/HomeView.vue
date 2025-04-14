@@ -81,7 +81,7 @@ const projectImagesODIN = ref([
   },
   {
     id: 2,
-    name: 'Dasshboard',
+    name: 'Dashboard',
     image: 'Dashboard.png',
     link: 'https://github.com/GumZLey/git_test/tree/main/Project/Dashboard',
   },
@@ -194,9 +194,24 @@ onMounted(() => {
       <nav class="flex justify-between items-center text-primary w-full px-20 py-6">
         <h1 class="font-knewave text-2xl">Ananda</h1>
         <div class="flex flex-row gap-8">
-          <h2 @click="scrollToSection('aboutSection')" class="cursor-pointer">About</h2>
-          <h2 @click="scrollToSection('projectsSection')" class="cursor-pointer">Projects</h2>
-          <h2 @click="scrollToSection('contactSection')" class="cursor-pointer">Contact</h2>
+          <h2
+            @click="scrollToSection('aboutSection')"
+            class="cursor-pointer hover:-translate-y-1 duration-150"
+          >
+            About
+          </h2>
+          <h2
+            @click="scrollToSection('projectsSection')"
+            class="cursor-pointer hover:-translate-y-1 duration-150"
+          >
+            Projects
+          </h2>
+          <h2
+            @click="scrollToSection('contactSection')"
+            class="cursor-pointer hover:-translate-y-1 duration-150"
+          >
+            Contact
+          </h2>
         </div>
       </nav>
     </div>
@@ -239,8 +254,8 @@ onMounted(() => {
           I want to focusing on Web Development firsts.
         </article>
         <a
-          href="#"
           class="mt-8 py-2 px-2 hover:text-primary transition-colors duration-300 text-primary/80 underline"
+          @click="scrollToSection('contactSection')"
           >Contact Me</a
         >
       </div>
