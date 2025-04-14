@@ -254,7 +254,7 @@ onMounted(() => {
           I want to focusing on Web Development firsts.
         </article>
         <a
-          class="mt-8 py-2 px-2 hover:text-primary transition-colors duration-300 text-primary/80 underline"
+          class="mt-8 py-2 px-2 hover:text-primary transition-colors duration-300 text-primary/80 underline cursor-pointer"
           @click="scrollToSection('contactSection')"
           >Contact Me</a
         >
