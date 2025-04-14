@@ -13,7 +13,7 @@ const projects = ref([
     id: 1,
     name: 'Image Segment Nothing',
     description:
-      'This project is a web-based Deep-Learning integration that provides advanced image segmentation capabilities. Users can upload images, process them using AI-powered segmentation, visualize segmented regions, and download the results.',
+      'This project is a web-based Deep-Learning integration that provides advanced image segmentation capabilities. Users can upload images, process them using AI-powered segmentation, visualize segmented regions, and download the results. MERN Stack (With no MongoDB)',
     image: 'SN.png',
     link: 'https://github.com/GumZLey/image-segment-nothing-project',
   },
@@ -253,7 +253,7 @@ onMounted(() => {
       </div>
     </section>
     <section
-      class="flex flex-col justify-start lg:items-start w-full min-h-[500px] p-10 bg-pink-bg mb-40 sm:items-center"
+      class="flex flex-col justify-start lg:items-center w-full min-h-[500px] p-10 bg-pink-bg mb-40 sm:items-center"
     >
       <h1 class="text-4xl font-bold mb-10 ml-23">Skills</h1>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-20">
