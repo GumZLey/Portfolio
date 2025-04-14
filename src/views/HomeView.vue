@@ -247,11 +247,11 @@ onMounted(() => {
           Engineer.
         </h1>
         <article class="text-base mt-4 ml-1">
-          Full-stack Developer can’t describe me the best. <br />
-          I’m experiencing so many things in the past such as, <br />
+          Full-stack developers can’t describe me the best. <br />
+          I’ve experienced so many things in the past. Such as, <br />
           Machine Learning, Game Development, Web Development, <br />
-          Platform like LeetCode grinder, Embedded. But right now, <br />
-          I want to focusing on Web Development firsts.
+          Platforms like LeetCode grinder, Embedded. But right now, <br />
+          I want to focus on Web Development first.
         </article>
         <a
           class="mt-8 py-2 px-2 hover:text-primary transition-colors duration-300 text-primary/80 underline cursor-pointer"
