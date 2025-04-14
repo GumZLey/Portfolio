@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 
 @theme {
+  --breakpoint-xs: 20rem;
   --font-knewave: 'Knewave';
   --color-primary: #fd7e14;
   --color-secondary: #858585;

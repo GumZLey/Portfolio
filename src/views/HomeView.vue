@@ -191,7 +191,7 @@ onMounted(() => {
 <template>
   <header class="transition-all duration-700 ease-in-out translate-y-[-50px] opacity-0">
     <div class="wrapper font-Poppins">
-      <nav class="flex justify-between items-center text-primary w-full px-20 py-6">
+      <nav class="flex justify-between items-center text-primary w-full px-20 py-6 xs:px-10">
         <h1 class="font-knewave text-2xl">Ananda</h1>
         <div class="flex flex-row gap-8">
           <h2
@@ -219,14 +219,14 @@ onMounted(() => {
 
   <main class="font-Poppins font-semibold text-secondary">
     <section
-      class="text-center text-secondary w-full h-screen flex flex-col justify-center items-center pb-30"
+      class="text-center text-secondary w-full h-screen flex flex-col justify-center items-center p-10 pb-30"
     >
       <p>
         Third-year University student at Mahidol University Full-stack Developer <br />
         No one hires me. So, I have to make this website.
       </p>
       <h1
-        class="font-knewave text-black text-[160px] transition-all ease-in-out translate-y-[-70px] opacity-0 delay-700"
+        class="font-knewave text-black md:text-[160px] xs:text-[80px] transition-all ease-in-out translate-y-[-70px] opacity-0 delay-700"
         id="myName"
       >
         ANANDA
@@ -237,21 +237,19 @@ onMounted(() => {
       </div>
     </section>
     <section
-      class="flex lg:flex-row justify-around items-center w-full min-h-[500px] p-10 mb-40 md:flex-col-reverse sm:flex-col-reverse"
+      class="flex lg:flex-row justify-center items-center w-full min-h-[500px] md:gap-100 p-10 mb-40 xs:flex-col-reverse xs:gap-10"
       id="aboutSection"
     >
-      <div class="flex flex-col justify-start items-start text-left gap-2">
+      <div class="flex flex-col justify-start items-start text-left gap-2 md:w-[30%] xs:w-[80%]">
         <h2 class="text-lg">Who am I</h2>
         <h1 class="text-4xl font-bold mt-2 leading-15 ml-1">
           Software <br />
           Engineer.
         </h1>
         <article class="text-base mt-4 ml-1">
-          Full-stack developers can’t describe me the best. <br />
-          I’ve experienced so many things in the past. Such as, <br />
-          Machine Learning, Game Development, Web Development, <br />
-          Platforms like LeetCode grinder, Embedded. But right now, <br />
-          I want to focus on Web Development first.
+          Full-stack developers can’t describe me the best. I’ve experienced so many things in the
+          past. Such as, Machine Learning, Game Development, Web Development, Platforms like
+          LeetCode grinder, Embedded. But right now, I want to focus on Web Development first.
         </article>
         <a
           class="mt-8 py-2 px-2 hover:text-primary transition-colors duration-300 text-primary/80 underline cursor-pointer"
@@ -263,14 +261,14 @@ onMounted(() => {
         <img
           src="@/assets/Ley_Profile.jpg"
           alt="My Profile"
-          class="w-[400px] h-[400px] rounded-full object-cover"
+          class="w-[400px] h-[400px] rounded-full object-cover xs:w-[300px] xs:h-[300px]"
         />
       </div>
     </section>
     <section
-      class="flex flex-col justify-start lg:items-center w-full min-h-[500px] p-10 bg-pink-bg mb-40 sm:items-center"
+      class="flex flex-col justify-start lg:items-center w-full min-h-[500px] p-10 bg-pink-bg mb-40 xs:items-center"
     >
-      <h1 class="text-4xl font-bold mb-10 ml-23">Skills</h1>
+      <h1 class="text-4xl font-bold mb-10">Skills</h1>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-20">
         <div
           v-for="(skill, index) in skillImages"
@@ -297,13 +295,15 @@ onMounted(() => {
       class="flex flex-col justify-start items-start w-full min-h-fit p-10 gap-10"
       id="projectsSection"
     >
-      <h1 class="text-4xl text-left ml-23">Projects</h1>
+      <h1 class="text-4xl md:text-left lg:ml-23 xs:ml-0">Projects</h1>
       <div v-for="(project, index) in projects" :key="index" class="w-full">
         <ProjectComponent :ProjectData="project" />
       </div>
     </section>
-    <section class="flex flex-col justify-start items-start w-full min-h-fit p-10 gap-10">
-      <h1 class="text-4xl text-left ml-23">The Odin Project</h1>
+    <section
+      class="flex flex-col md:justify-start md:items-start w-full min-h-fit p-10 gap-10 xs:items-center xs:justify-center"
+    >
+      <h1 class="text-4xl md:text-left lg:ml-23 xs:ml-0">The Odin Project</h1>
       <div class="flex flex-row flex-wrap justify-center items-center gap-10">
         <div v-for="(project, index) in projectImagesODIN" :key="index" class="w-fit">
           <ProjectComponentNoD :ProjectDataNoD="project" />
@@ -311,7 +311,7 @@ onMounted(() => {
       </div>
     </section>
     <section class="flex flex-col justify-start items-start w-full min-h-fit p-10 gap-10">
-      <h1 class="text-4xl text-left ml-23">Frontend Mentor</h1>
+      <h1 class="text-4xl md:text-left lg:ml-23 xs:ml-0">Frontend Mentor</h1>
       <div class="flex flex-row flex-wrap justify-center items-center gap-10">
         <div v-for="(project, index) in projectImagesFM" :key="index" class="w-fit">
           <ProjectComponentNoD :ProjectDataNoD="project" />
@@ -324,7 +324,7 @@ onMounted(() => {
       id="contactSection"
     >
       <h1 class="text-4xl text-primary font-bold">Start Hiring Me</h1>
-      <div class="flex flex-row justify-between items-center gap-10 w-[80%] mt-6">
+      <div class="flex md:flex-row justify-between items-center gap-10 w-[80%] mt-6 xs:flex-col">
         <div class="flex flex-col justify-start items-start text-left gap-2">
           <h1>kliv2554@gmail.com</h1>
           <h1>089-929-3799</h1>
@@ -360,7 +360,7 @@ onMounted(() => {
             />
           </div>
         </div>
-        <h1>
+        <h1 class="md:block xs:hidden">
           Mahidol University <br />
           Third-year student
         </h1>

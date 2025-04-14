@@ -1,7 +1,9 @@
 <template>
-  <section class="flex sm:flex-col-reverse justify-around items-center w-full min-h-[500px] p-10">
+  <section
+    class="flex xs:flex-col-reverse md:justify-around xs:justify-center items-center w-full min-h-[200px] md:p-10 xs:p-2"
+  >
     <div class="flex flex-row justify-center items-center text-left gap-2">
-      <h1 class="text-4xl font-bold mt-2 leading-15 ml-1">
+      <h1 class="md:text-4xl xs:text-2xl font-bold mt-2 leading-15 ml-1">
         {{ ProjectDataNoD.name }}
       </h1>
       <img

@@ -1,5 +1,8 @@
 <template>
-  <section class="flex lg:flex-row justify-around items-center w-full min-h-[500px] p-10 md:flex-col-reverse sm:flex-col-reverse" :class="ProjectData.id % 2 === 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'">
+  <section
+    class="flex lg:flex-row justify-around items-center w-full min-h-[500px] p-10 xs:flex-col-reverse gap-10 xs:p-2"
+    :class="ProjectData.id % 2 === 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'"
+  >
     <div class="flex flex-col justify-start items-start text-left gap-2">
       <h1 class="text-4xl font-bold mt-2 leading-15 ml-1">
         {{ ProjectData.name }}
@@ -15,11 +18,7 @@
       />
     </div>
     <div class="flex items-center justify-center">
-      <img
-        :src="imagePath"
-        alt="My Profile"
-        class="w-[600px] h-auto rounded-2xl  object-cover"
-      />
+      <img :src="imagePath" alt="My Profile" class="w-[600px] h-auto rounded-2xl object-cover" />
     </div>
   </section>
 </template>
