@@ -1,12 +1,13 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
 @theme {
-  --font-knewave: "Knewave";
-  --color-primary: #FD7E14;
+  --font-knewave: 'Knewave';
+  --color-primary: #fd7e14;
   --color-secondary: #858585;
-  --color-pink-bg: #FDC3DC;
+  --color-pink-bg: #fdc3dc;
   --color-dark-bg: rgba(0, 0, 0, 0.9);
 }
 
 body {
-  background-color: #FFFBDC;
+  background-color: #fffbdc;
 }
