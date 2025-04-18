@@ -35,6 +35,14 @@ const projects = ref([
   },
   {
     id: 4,
+    name: 'Book Recommendation',
+    description:
+      'The Book Recommendation System is a web-based app that delivers personalized book suggestions using TF-IDF and cosine similarity algorithms. Built with Vue 3, TailwindCSS, and Vite on the frontend and Flask on the backend, the system analyzes user input to recommend relevant books from a CSV-based dataset.',
+    image: 'book-recommendation.png',
+    link: 'https://github.com/GumZLey/Library-Recommend-System',
+  },
+  {
+    id: 5,
     name: 'Agado (Ongoing)',
     description:
       "Agado is like an Agoda clone, but different. This website will collect data on the dormitory near Mahidol University and filter the best price value for the dormitory. I'll use Google Map API for the location, PostgreSQL for the database, Node Express for the backend, and Vue for the frontend. The seller can also list their place on the website.",
@@ -42,7 +50,7 @@ const projects = ref([
     link: 'https://github.com/GumZLey',
   },
   {
-    id: 5,
+    id: 6,
     name: 'Dead Prevention (Ongoing)',
     description:
       "The Dead Prevention. In this project, We'll use an Embedded system to send the data shown in the card. We use Strapi as a backend data management and show data in Vue. This project will save patients who need help while waiting for a doctor. The products will attach to the finger of the patient to make the patient not feel uncomfortable.",
